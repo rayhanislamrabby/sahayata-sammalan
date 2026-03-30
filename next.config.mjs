@@ -9,13 +9,22 @@ const nextConfig = {
         protocol: "https",
         hostname: "www.mycreativeshop.com",
       },
-      {
-        protocol: "https",
-        hostname: "www.oabfoundation.org",
-      },
+
       {
         protocol: "https",
         hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "i.ibb.co",
+      },
+      {
+        protocol: "https",
+        hostname: "azbigmedia.com",
+      },
+      {
+        protocol: "https",
+        hostname: "via.placeholder.com",
       },
     ],
   },
