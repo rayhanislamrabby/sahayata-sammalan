@@ -78,14 +78,14 @@ export default function Hero() {
                   
                   <div className="max-w-4xl mx-auto flex flex-col items-center">
                 
-                    <motion.span
+                    {/* <motion.span
                       initial={{ opacity: 0, y: -10 }}
                       animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}
                       transition={{ duration: 0.5, delay: 0.3 }}
                       className="text-green-500 font-bold tracking-[0.3em] uppercase text-[9px] mb-3 bg-white/10 backdrop-blur-sm px-3 py-1 rounded-full border border-white/5"
                     >
-                      Novexa Foundation
-                    </motion.span>
+                      Sahayata Sammalan
+                    </motion.span> */}
 
                 
                     <motion.h1 

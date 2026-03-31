@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
 export const metadata = {
+  metadataBase: new URL("https://sahayata-sammalan.vercel.app"),
   title: "Sahayata Sammalan | Standing Beside Humanity",
   description:
     "Sahayata Sammalan is a voluntary organization dedicated to empowering underprivileged communities in Bangladesh through social impact and collective support.",
@@ -22,7 +22,7 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
-    apple: "/favicon.ico", 
+    apple: "/favicon.ico",
   },
 
   keywords: [
@@ -34,28 +34,35 @@ export const metadata = {
   ],
 
   alternates: {
-    canonical: "https://sahayatasammalan.org",
+    canonical: "/",
   },
 
   openGraph: {
     title: "Sahayata Sammalan | Standing Beside Humanity",
     description:
       "Empowering communities and standing beside those in need. Join Sahayata Sammalan in creating a lasting social impact.",
-    url: "https://sahayatasammalan.org",
+    url: "https://sahayata-sammalan.vercel.app",
     siteName: "Sahayata Sammalan",
     images: [
       {
-        url: "/navlogo.png",
-        width: 1200,
-        height: 630,
+       
+        url: "/assets/navlogo.png",
+        width: 1025,
+        height: 1024,
         alt: "Sahayata Sammalan Logo",
       },
     ],
     locale: "en_US",
     type: "website",
   },
-};
 
+  twitter: {
+    card: "summary_large_image",
+    title: "Sahayata Sammalan | Standing Beside Humanity",
+    description: "Empowering communities and standing beside those in need.",
+    images: ["/assets/navlogo.png"],
+  },
+};
 
 export const viewport = {
   themeColor: "#009661",
@@ -67,16 +74,13 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       data-theme="light"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-screen flex flex-col bg-white text-gray-900">
         <NavBar />
-        
-        <main className="grow">
-          {children}
-        </main>
-
+        <main className="grow">{children}</main>
         <Footer />
       </body>
     </html>
