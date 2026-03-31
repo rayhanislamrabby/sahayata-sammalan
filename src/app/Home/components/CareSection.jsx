@@ -6,7 +6,7 @@ export default function CareSection() {
       badge: "Tree Plantation",
       stats: "10,000+ Trees Planted",
       title: "Protecting the Planet, Preserving Our Future",
-      desc: "At OAB Foundation, we believe that caring for the environment is not just a responsibility—it’s a necessity. As climate change threatens millions, especially in regions like Bangladesh, we take action through large-scale tree-planting, clean-up drives, and youth climate education.",
+      desc: "Sohozogita Foundation, we believe that caring for the environment is not just a responsibility—it’s a necessity. As climate change threatens millions, especially in regions like Bangladesh, we take action through large-scale tree-planting, clean-up drives, and youth climate education.",
       points: ["Tree Plantation", "Climate Awareness", "Eco Education"],
       img: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2013",
       isReverse: false
@@ -24,7 +24,7 @@ export default function CareSection() {
       badge: "Women Empowerment",
       stats: "2,500+ Women Empowered",
       title: "Ending Violence, Restoring Dignity",
-      desc: "OAB Foundation stands against all forms of violence toward women. We provide support and empower survivors to reclaim their voice and dignity through education, advocacy, and legal aid. We believe every woman deserves to live free from fear.",
+      desc: "Sohozogita Foundation stands against all forms of violence toward women. We provide support and empower survivors to reclaim their voice and dignity through education, advocacy, and legal aid. We believe every woman deserves to live free from fear.",
       points: ["Legal Aid", "Counseling", "Awareness Campaigns"],
       img: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1974",
       isReverse: false
@@ -43,8 +43,7 @@ export default function CareSection() {
   return (
     <section className="py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4 md:px-12">
-        
-        {/* Section Main Header */}
+    
         <div className="text-center mb-20 max-w-2xl mx-auto">
           <span className="text-green-600 font-bold tracking-[0.2em] uppercase text-xs">Our Commitment</span>
           <h2 className="text-4xl md:text-6xl font-black text-gray-900 mt-3 leading-none uppercase tracking-tighter">
@@ -55,14 +54,14 @@ export default function CareSection() {
           </p>
         </div>
 
-        {/* Causes Rows */}
+      
         <div className="space-y-32">
           {causes.map((cause, i) => (
             <div 
               key={i} 
               className={`flex flex-col ${cause.isReverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-12 lg:gap-20`}
             >
-              {/* Image Side */}
+          
               <div className="w-full lg:w-1/2 relative group">
                 <div className="relative h-[350px] md:h-[450px] w-full rounded-[40px] overflow-hidden shadow-2xl z-10 border-4 border-white">
                   <Image 
@@ -72,13 +71,13 @@ export default function CareSection() {
                     alt={cause.title} 
                   />
                 </div>
-                {/* Stats Badge */}
+             
                 <div className="absolute -bottom-6 -right-6 md:right-0 bg-gray-900 text-white p-6 rounded-3xl z-20 shadow-xl border-t-4 border-green-500 min-w-[180px]">
                   <p className="text-2xl font-black text-green-500 tracking-tighter">{cause.stats}</p>
                 </div>
               </div>
 
-              {/* Text Side */}
+            
               <div className="w-full lg:w-1/2 space-y-6">
                 <span className="text-green-600 font-bold text-xs uppercase tracking-widest bg-green-50 px-3 py-1 rounded-full">
                   {cause.badge}
@@ -90,7 +89,7 @@ export default function CareSection() {
                   {cause.desc}
                 </p>
 
-                {/* Sub-Initiatives List */}
+             
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4 border-t border-gray-100">
                   {cause.points.map((pt, idx) => (
                     <div key={idx} className="flex items-center gap-3 text-gray-800 font-bold text-xs uppercase tracking-tight">

@@ -5,6 +5,7 @@ import AboutSection from "./components/AboutSection";
 import StatsSection from "./components/StatsSection";
 import JoinUs from "./components/JoinUs";
 import CareSection from "./components/CareSection";
+import Partners from "./components/Partners";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <AboutSection />
       <CareSection />
       <StatsSection />
+      <Partners />
       <JoinUs />
     </div>
   );

@@ -10,7 +10,7 @@ export default async function Projects() {
     <section className="py-24 bg-[#F8FAFC]">
       <div className="container mx-auto px-6 max-w-6xl">
         
-        {/* Section Header */}
+  
         <div className="text-center mb-16 max-w-2xl mx-auto space-y-4">
           <p className="text-emerald-600 text-[10px] font-black uppercase tracking-[0.4em]">
             Our Ongoing Projects
@@ -29,7 +29,7 @@ export default async function Projects() {
           {data.map((project) => (
             <div
               key={project._id.toString()}
-              className="group bg-white rounded-[24px] overflow-hidden flex flex-col h-full border-2 border-emerald-500 shadow-[inset_0_2px_12px_rgba(20,184,166,0.1)] hover:shadow-2xl hover:shadow-emerald-900/10 transition-all duration-300"
+              className="group bg-white rounded-3xl overflow-hidden flex flex-col h-full border-2 border-emerald-500 shadow-[inset_0_2px_12px_rgba(20,184,166,0.1)] hover:shadow-2xl hover:shadow-emerald-900/10 transition-all duration-300"
             >
               {/* Image Section */}
               <div className="h-40 w-full relative overflow-hidden bg-slate-200">

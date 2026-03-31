@@ -15,7 +15,7 @@ export default async function GalleryPage({ searchParams }) {
   try {
     const galleryCollection = await dbConnect(collectionNameObj.galleryCollection);
 
-    // Images fetching
+
     const totalImages = await galleryCollection.countDocuments({ type: "image" });
     totalImgPages = Math.ceil(totalImages / limit);
     const imageData = await galleryCollection
@@ -24,7 +24,7 @@ export default async function GalleryPage({ searchParams }) {
       .limit(limit)
       .toArray();
 
-    // Videos fetching
+   
     const totalVideos = await galleryCollection.countDocuments({ type: "video" });
     totalVidPages = Math.ceil(totalVideos / limit);
     const videoData = await galleryCollection

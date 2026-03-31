@@ -11,10 +11,10 @@ export default async function Events() {
 
   return (
     <section className="py-20 bg-white font-sans">
-      {/* Container width bariye 7xl kora hoyeche (X-axis e boro) */}
+
       <div className="container mx-auto px-6 max-w-7xl">
         
-        {/* Header Section (Matching Image Style) */}
+  
         <div className="flex flex-col items-center text-center mb-16">
           <p className="text-[10px] md:text-xs font-black text-emerald-600 uppercase tracking-[0.3em] mb-4">
             Our Ongoing Events
@@ -28,15 +28,15 @@ export default async function Events() {
           </p>
         </div>
 
-        {/* Grid with Emerald Border */}
+  
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {data.map((event) => (
             <Link
               key={event._id.toString()}
               href={`/events/${event.slug}`}
-              className="group flex flex-col bg-white border-2 border-emerald-500 rounded-[2rem] overflow-hidden hover:shadow-2xl hover:shadow-emerald-100 transition-all duration-500"
+              className="group flex flex-col bg-white border-2 border-emerald-500 rounded-4xl overflow-hidden hover:shadow-2xl hover:shadow-emerald-100 transition-all duration-500"
             >
-              {/* Image Section */}
+            
               <div className="relative h-60 w-full overflow-hidden bg-slate-100">
                 <Image
                   src={event.thumbnail || (event.images && event.images[0])}
@@ -46,8 +46,8 @@ export default async function Events() {
                 />
               </div>
 
-              {/* Content Section */}
-              <div className="p-8 flex flex-col flex-grow">
+         
+              <div className="p-8 flex flex-col grow">
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-lg">
                     {event.category}
@@ -68,7 +68,7 @@ export default async function Events() {
                   {event.shortDesc}
                 </p>
 
-                {/* Footer Section */}
+        
                 <div className="mt-auto pt-6 border-t border-slate-100 flex items-center justify-between">
                   <div>
                     <p className="text-[10px] uppercase font-bold text-slate-400 tracking-wider mb-1">

@@ -53,7 +53,7 @@ export default function MissionSection() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 md:px-10">
-        {/* Modern Centered Header */}
+       
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-black text-gray-900 uppercase tracking-tighter">
             Why We <span className="text-green-600">Need Your Help</span>
@@ -63,19 +63,19 @@ export default function MissionSection() {
           </p>
         </div>
 
-        {/* Compact Grid: Card height komano hoyeche */}
+      
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {missions.map((m, i) => (
             <div
               key={i}
-              className="group bg-white border border-gray-100 p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center justify-center min-h-[220px]"
+              className="group bg-white border border-gray-100 p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center justify-center min-h-56"
             >
-              {/* Floating Icon Style */}
+         
               <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center text-3xl mb-4 group-hover:scale-110 group-hover:bg-green-50 transition-all">
                 <span className={m.color}>{m.icon}</span>
               </div>
 
-              {/* Text Content */}
+            
               <h4 className="text-lg font-black text-gray-800 uppercase tracking-tight mb-2 group-hover:text-green-600 transition-colors">
                 {m.title}
               </h4>

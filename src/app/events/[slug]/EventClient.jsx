@@ -19,7 +19,7 @@ export default function EventClient({ event }) {
 
   return (
     <main className="min-h-screen bg-white pb-20 font-sans text-[#0F172A]">
-      {/* 1. Static Banner - No Text */}
+    
       <div className="relative w-full h-[40vh] md:h-[60vh] bg-slate-100">
         <Image
           src={event.thumbnail}
@@ -38,10 +38,10 @@ export default function EventClient({ event }) {
         </div>
       </div>
 
-      {/* 2. Content Section */}
+    
       <div className="container mx-auto px-4 max-w-4xl pt-12">
         <div className="flex flex-col gap-8">
-          {/* Metadata Badges */}
+   
           <div className="flex flex-wrap items-center gap-5 text-[#475569] text-[12px] font-bold uppercase tracking-widest">
             <span className="bg-emerald-600 text-white px-4 py-1.5 rounded-lg">
               {event.category}
@@ -54,12 +54,11 @@ export default function EventClient({ event }) {
             </div>
           </div>
 
-          {/* Deep Colored Title */}
           <h1 className="text-4xl md:text-6xl font-black text-[#0F172A] leading-tight tracking-tight uppercase">
             {event.title}
           </h1>
 
-          {/* High Contrast Description */}
+      
           <div className="space-y-8">
             <p className="text-2xl text-[#1E293B] font-extrabold leading-relaxed border-l-8 border-emerald-500 pl-6 py-2 bg-slate-50 rounded-r-2xl">
               {event.shortDesc}
@@ -69,7 +68,7 @@ export default function EventClient({ event }) {
             </div>
           </div>
 
-          {/* Impact & Action Card */}
+    
           <div className="bg-[#0F172A] rounded-3xl p-8 md:p-10 my-10 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
             <div className="flex items-center gap-5">
               <div className="p-4 bg-emerald-500 rounded-2xl shadow-lg shadow-emerald-500/20">
@@ -100,7 +99,7 @@ export default function EventClient({ event }) {
           </div>
         </div>
 
-        {/* 3. Normal Gallery (Image + Suggestions Below) */}
+      
         <div className="mt-24 border-t border-slate-100 pt-16">
           <div className="mb-8 text-center md:text-left">
             <h2 className="text-3xl font-black text-[#0F172A] uppercase tracking-tighter">
@@ -111,7 +110,7 @@ export default function EventClient({ event }) {
             </p>
           </div>
 
-          {/* Big Display Image */}
+        
           <div className="relative w-full h-[300px] md:h-[500px] rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white mb-8">
             <Image
               src={selectedGalleryImg}
@@ -121,7 +120,7 @@ export default function EventClient({ event }) {
             />
           </div>
 
-          {/* Suggestions (Thumbnails Grid) */}
+       
           <div className="flex flex-wrap justify-center md:justify-start gap-4">
             {event.images?.map((img, idx) => (
               <div

@@ -22,7 +22,7 @@ export default function Hero() {
       buttonLink: "/about",
     },
     {
-      // Fixed: Direct Image Link (Ager link-ti webpage chilo, tai kaj koroni)
+     
       image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?q=80&w=2070",
       title: "Your Small Act Can Change a Life",
       description: "Every contribution brings us closer to a world with quality education for all.",
@@ -42,7 +42,7 @@ export default function Hero() {
     <section className="bg-white overflow-hidden">
       <Swiper
         effect={"fade"}
-        speed={1500} // Image change hobe ektu slow ebong smooth
+        speed={1500} 
         loop={true}
         autoplay={{
           delay: 6000,
@@ -57,12 +57,12 @@ export default function Hero() {
           <SwiperSlide key={index}>
             {({ isActive }) => (
               <div className="relative w-full h-full overflow-hidden">
-                {/* Fixed Zoom Animation */}
+             
                 <motion.div 
                   className="absolute inset-0"
-                  initial={{ scale: 1.2 }} // Zoom out effect start
+                  initial={{ scale: 1.2 }} 
                   animate={isActive ? { scale: 1 } : { scale: 1.2 }}
-                  transition={{ duration: 6, ease: "easeOut" }} // Zhak effect duration
+                  transition={{ duration: 6, ease: "easeOut" }} 
                 >
                   <Image
                     src={slide.image}
@@ -73,11 +73,11 @@ export default function Hero() {
                   />
                 </motion.div>
 
-                {/* Content Overlay */}
+            
                 <div className="absolute inset-0 flex flex-col justify-center items-center px-6 text-center text-white bg-black/30">
                   
                   <div className="max-w-4xl mx-auto flex flex-col items-center">
-                    {/* Badge */}
+                
                     <motion.span
                       initial={{ opacity: 0, y: -10 }}
                       animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: -10 }}
@@ -87,7 +87,7 @@ export default function Hero() {
                       Novexa Foundation
                     </motion.span>
 
-                    {/* Title - Compact Size */}
+                
                     <motion.h1 
                       initial={{ opacity: 0, y: 20 }}
                       animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -97,7 +97,7 @@ export default function Hero() {
                       {slide.title}
                     </motion.h1>
 
-                    {/* Description - Smaller Text */}
+              
                     <motion.p 
                       initial={{ opacity: 0, y: 15 }}
                       animate={isActive ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
@@ -107,7 +107,6 @@ export default function Hero() {
                       {slide.description}
                     </motion.p>
 
-                    {/* Buttons - Compact */}
                     <motion.div 
                       initial={{ opacity: 0, scale: 0.95 }}
                       animate={isActive ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
