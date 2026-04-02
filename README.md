@@ -3,7 +3,7 @@
 A professional social organization website built with a modern Next.Js.
 
 ## 🚀 Live Demo
-[https://sahayata-one.vercel.app](https://sahayata-one.vercel.app)
+[https://sahayata-sammalan.vercel.app/](https://sahayata-sammalan.vercel.app/)
 
 ## 🛠️ Features
 - **Modern UI:** Responsive and high-end design for all devices.
